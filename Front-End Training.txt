@@ -1,0 +1,253 @@
+Html(Hyper-Text-Markup-Language):
+
+Introduction:
+Tim Berner Lee, Founder of Html.
+A standard of presenting data.
+Line - Mode browser was used as a medium of Browsing Data.
+The Html files were downloaded and read from the local machine without the use of a GUI back then.
+Command : Curl "URL" > "URL".html	
+Html Tags are not Case Sensitive.
+<!DOCTYPE HTML> tag boosts performance as it allows the Computer to recogonize the file as a html file without checking throught the entire document.
+Two types of tags :
+Atonic: <br>,no content
+Composite: <>Content</>
+
+SVG: Scalable vector graphics
+It is used to provide simple graphical shapes to the html page
+ 
+W3C manages standards used in HTML,JSON,XML and its protocols all over WWW
+
+html tags are divided into 2 ,Input tags and Non input tags.
+ 
+HTML provides 2 types of storage facility: Session storage(small)(short term)(cookies,tokens) and Local Storage(large)(Long term)(SQL DATABASE,).Both are not secure enough
+
+
+Style tag can have multiple styles and style tags can be present in mpre than one section of the code.
+Types of CSS StyleSheets: Inline>Internal>External
+
+Types of selectors:
+Universal selector
+Element selector
+Group selector(child selector)(div>p)
+id selector
+attribute selector
+class selector
+index selector(psuedo selector)(mouse events like hover,click)
+
+Container Tags:(composite tag)
+Html,Head,Div,Span,pre,p,u,b,i,form,table,img
+
+JS CallBacks: Automated(Called by browser based on events),Manual(Called when required)
+
+3UI Functions in JS:
+windows.alert()--> Messages/Warnings
+windows.promp()-->Take user input
+windows.confirm()-->yes/no
+
+
+DOM: Document Object Model
+html tags as objects
+allows the browser to understand the document with the help of dom tree.it is created by the browser
+
+
+Built IN objects in JS:
+Window
+Document
+History
+Exception
+Screen
+Navigator
+GeoLocation
+LocalStorage
+SessionStorage
+Cookies
+Frames
+Forms
+.
+.
+.
+.
+Console
+
+<object>,Consists of composite variables.
+
+Form level Validation
+Field Level validation: 
+
+userdefined event can be created in 2 ways:
+using event class,using custom event class
+
+React JS(open source framework developed by FaceBook) - create Reactive website
+Node JS - server environment
+Express JS -
+
+ReactJS:
+It has all the properties that html and css has and doesnt have.
+
+Two types of components or two types of tags can be created : Functional component(Functional tag which performs an action) or class component(Performs more than one action).
+The purpose of React is to create tags that perform Developer defined actions.
+
+Only External Style sheets are allowed in React JS
+
+
+Binding can be of 2 types :
+One way Binding,Two way Binding
+
+Loading updating{contents change} and unloading: process of browser Displaying html tags
+
+Mounting,updating,unmounting
+
+Use state for functional components,State is for class components
+
+Hooks in react js: With Hooks, you can extract stateful logic from a component so it can be tested independently and reused.it reduces the code in a FIle.
+
+Functional bootstrap 		
+
+In express ,UI deevlopement is not recommended and is a tedious process to do so.
+
+mssql
+ options:{trustedConnection:true},
+  driver:"msnodesqlv8",
+  server:"200411LTP2750//SQLEXPRESS",
+  database:"UserDetails",
+  
+
+Angular JS : 
+open source,Uses typescript ,but used JS untill version 3 of angular,single,
+Developed by angular.io and bought out by google .React js uses Angular features,object oriented programming possible 
+
+File processing order : 
+Package.Json-->main.ts-->index.html-->app.module.ts-->app.component.ts
+
+Component = Collection of tags
+every component will have a view that is html file and ll have one or more Css
+
+By default angular follows External style sheets
+
+CSS : internal ,external ,Inline
+
+
+.ts file : 
+Model Controller
+.html : 
+View
+.css:
+css
+Create a Component:
+ng generate component componentname
+ng g c componentname
+
+App component is the highest in hierarchy.The components others are just the child component of App component.
+*Databinding:
+{{}}-->oneway binding
+[()]--> twoway binding
+*Class binding : 
+Attach a CSS class to a html tag
+*Event binding:
+Attach a function (controller) to a button or any other html tag
+*property binding :
+Attach a value to a html tag
+*Attribute binding : 
+use attributes in html tag
+*Style binding : 
+Use style in html tag
+
+
+Types of Pipes
+string pipe
+currency pipe
+decimal pipe
+date pipe
+JSON pipe
+Internationalization
+Two type of forms : template driven and reactive forms
+ReactiveForms:
+Based on the form ,Model is produced manually.
+can perform validation without code.Dynamic code,
+Template driven forms:
+Static form .Model is produced automatically.We use built in attribute ng-form
+
+FormControl definition :
+
+userform = new FormGroup(
+{
+	/*defintion od teh fields in the model and also respective validations*/
+	<fieldname>:new Form Control(<inital value>,[<validation1>,<validation2>...............<validationN>])..........
+................................
+.............................
+	<fieldname2> : new FormControl(<initialValue>,[<Validation1>..............................,<ValidationN>])
+},
+{
+		//Timing of Validation
+		updateOn:<blur,change,submit>
+}
+);
+
+COMPONENT LIFE CYCLE:
+
+Initialization Phase (ngOnInit)(AfterViewInit)
+Activation Phase (onActivate)
+View or Display Phase(AfterViewInit)(AfterViewChecked)
+Validation Phase(ngDoCheck)(AfterContentChecked)
+Updation Phase(onUpdate)
+Destroy Phase(onDestroy)
+
+
+NODEJS:
+
+It is a framework that is entirely written in JS.
+It is a server platform.
+it supports/Follows JS syntax.
+A normal JS requires a browser to execute.Browser executes the normal JS code.A JS written using NodeJS doesnt require Browser.Instead it requires NodeJS t o run the script.
+Node jS is used to run the JavaScript code on the server without the use of a Browser.
+Node Js provides a light weight server environment to the javascript code.So execution is faster because of the light weight nature of NodeJS.
+A JS code can be executed on command line also using NodeJS.
+Like JS ,NodeJS doesn not support any DataType.
+
+
+IMPORTING A MODULE:
+
+VAR <MODULE REF> = REQUIRE ('<NAME OF THE MODULE>');
+
+Built-IN modules: 
+file,os,network,process
+
+I18n:
+ "i18n:extract" : "ng extract:i18n --output-path src/locale"
+i18n is the package name
+src/locale - consists of translation files for various languages
+
+MongoDB:
+Json :Lightest Data storage format
+Json can be used for transmitting and storing structured data
+RDBMS follows the definite structure for the data , NoSQL databases does not follow pre determined structure (The structure can be changed).
+
+Taxonomy of NoSQL:
+KeyValue : Redis,Riak
+Graph Database:neo4j(apple) ,hypergraphdb
+Document-Oriented:MongoDb,CouchDB
+Column Family:Cassandra,HBase
+
+Theory of NoSQL:
+Nodes:Contain replicas of partitions
+CAP-Consistency,Availability,Partition Tolerance(Satisifying all 3 is impossible).
+Sharding: Single database ,distributed among multiple machines/servers .Gets updated when any one of the databse gets updated.
+
+In NoSql ,a record is Called a document.
+A set of documents is called a collection.
+A set of collections is called a database.
+
+Benefits of NoSQL:
+Elastic scaling
+DBA Specilists
+Big data
+
+mongod
+mongosh
+mongodb://127.0.0.1:27017/?directConnection=true&serverSelectionTimeoutMS=2000&appName=mongosh+2.0.2
+
+In MongoDB , while inserting elements in to a collection unique object id is generated for each element entry.
+
+
+
+
